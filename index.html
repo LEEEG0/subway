@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Subway</title>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <div class=" nav-top">
+            <div class="logo"><a href="./main.html"><img width="180px" height="40px" src="./img/logo.png" alt="#"></a></div>
+            <div class="icon-area">
+                <a href="#"><img width="25px" src="./img/my.png" alt="#"></a>
+                <a href="#"><img width="25px" src="./img/shop.png" alt="#"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-area">
+        <div class="all-step">
+            <h1 id="now" class="step"><img width="70px" class="step-img" src="./img/menu.png" alt="#">메뉴선택</h1>
+            <h1 class="step"><img width="70px" class="step-img" src="./img/choose.png" alt="#">재료선택</h1>
+            <h1 class="step"><img width="70px" class="step-img" src="./img/ordercheck.png" alt="#">주문확인</h1>
+            <h1 class="step"><img width="70px" class="step-img" src="./img/check.png" alt="#">주문완료</h1>
+        </div>
+        <div class="line"></div>
+    </div>
+
+
+
+
+    <div class="menu_bar">
+        
+        <div class="filter">
+
+            <div class="ballon-area">
+                <div class="ballon">
+                    <p >알레르기 필터 ON/OFF</p>
+                </div>
+            </div>
+            
+
+            <input type="checkbox" id="toggle" hidden>
+            <label for="toggle" class="toggleSwitch">
+              <span class="toggleButton"></span>
+            </label>
+           </div>
+
+        <ul class="menu_pick">
+            <li><a href="#">프로모션</a></li>
+            <li><a class="pick" href="#">샌드위치</a></li>
+            <li><a href="#">랩·기타</a></li>
+            <li><a href="#">샐러드</a></li>
+            <li><a href="#">사이드·음료</a></li>
+        </ul>
+
+        <div class="like">
+            <a href="#"><img width="20px" src="./img/like.png" alt="#"></a>
+        </div>
+    </div>
+
+    <div class="allergy-area">
+        <div class="allergy-card" id="wheat">
+            <img width="36px"src="./img/wheat.png" alt="#">
+            <p>밀</p>
+        </div>
+
+        <div class="allergy-card" id="egg">
+            <img width="40px"src="./img/egg.png" alt="#">
+            <p>계란</p>
+        </div>
+
+        <div class="allergy-card" id="milk">
+            <img width="40px"src="./img/milk.png" alt="#">
+            <p>우유</p>
+        </div>
+
+        <div class="allergy-card" id="bean">
+            <img width="40px"src="./img/bean.png" alt="#">
+            <p>대두</p>
+        </div>
+
+        <div class="allergy-card" id="tomato">
+            <img width="40px"src="./img/tomato.png" alt="#">
+            <p>토마토</p>
+        </div>
+
+        <div class="allergy-card" id="peach">
+            <img width="40px"src="./img/peach.png" alt="#">
+            <p>복숭아</p>
+        </div>
+
+        <div class="allergy-card" id="cow">
+            <img width="40px"src="./img/cow.png" alt="#">
+            <p>쇠고기</p>
+        </div>
+
+        <div class="allergy-card" id="pig">
+            <img width="40px"src="./img/pig.png" alt="#">
+            <p>돼지고기</p>
+        </div>
+
+        <div class="allergy-card" id="chicken">
+            <img width="40px"src="./img/chicken_icon.png" alt="#">
+            <p>닭고기</p>
+        </div>
+
+        <div class="allergy-card" id="shrimp">
+            <img width="40px"src="./img/shrimp_icon.png" alt="#">
+            <p>새우</p>
+        </div>
+
+        <div class="allergy-card" id="fish">
+            <img width="50px"src="./img/fish.png" alt="#">
+            <p>고등어</p>
+        </div>
+
+        <div class="allergy-card" id="crab">
+            <img width="40px"src="./img/crab.png" alt="#">
+            <p>게</p>
+        </div>
+
+        <div class="allergy-card" id="squid">
+            <img width="40px"src="./img/squid.png" alt="#">
+            <p>오징어</p>
+        </div>
+
+        <div class="allergy-card" id="seashell">
+            <img width="40px"src="./img/seashell.png" alt="#">
+            <p>조개류</p>
+        </div>
+
+        <div class="allergy-card" id="peanut">
+            <img width="40px"src="./img/peanut.png" alt="#">
+            <p>땅콩</p>
+        </div>
+
+        <div class="allergy-card" id="walnut">
+            <img width="40px"src="./img/walnut.png" alt="#">
+            <p>호두</p>
+        </div>
+
+        <div class="allergy-card" id="wine">
+            <img width="40px"src="./img/wine.png" alt="#">
+            <p>아황산</p>
+        </div>
+
+        <div class="allergy-card" id="pine-cone">
+            <img width="40px"src="./img/pine-cone.png" alt="#">
+            <p>잣</p>
+        </div>
+
+                <div class="allergy-card" id="buckwheat">
+            <img width="40px"src="./img/buckwheat.png" alt="#">
+            <p>메밀</p>
+        </div>
+
+    </div>
+
+
+    <div class="menu_area">
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/ham.png" alt="">
+                <h2>햄</h2>
+                <h3>Ham</h3>
+                <h4>￦5,800</h4>
+                <p>262kcal</p>
+            </div>
+        </div>
+
+
+        <div class="sub-card wheat bean tomato pig chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/subway-club.png" alt="">
+                <h2>써브웨이 클럽</h2>
+                <h3>Subway Club™</h3>
+                <h4>￦7,100</h4>
+                <p>299kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/spicy.png" alt="">
+                <h2>스파이시 이탈리안</h2>
+                <h3>Spicy Italian</h3>
+                <h4>￦6,900</h4>
+                <p>464kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat milk bean tomato cow">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/Steak.png" alt="">
+                <h2>스테이크 & 치즈</h2>
+                <h3>Steak & Cheese</h3>
+                <h4>￦7,900</h4>
+                <p>355kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/chicken.png" alt="">
+                <h2>치킨 베이컨 아보카도</h2>
+                <h3>Chicken Bacon Avocado</h3>
+                <h4>￦7,900</h4>
+                <p>355kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">    
+                <img width="310px" height="200px" src="./img/k-bbq.png" alt="">
+                <h2>K - 바비큐</h2>
+                <h3>K-BBQ</h3>
+                <h4>￦7,300</h4>
+                <p>372kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/pork.png" alt="">
+                <h2>폴드 포크 바베큐</h2>
+                <h3>Pulled Pork Barbecue</h3>
+                <h4>￦7,200</h4>
+                <p>327kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/bbqchicken.png" alt="">
+                <h2>로티세리 바비큐 치킨</h2>
+                <h3>Rotisserie Barbecue Chicken</h3>
+                <h4>￦7,300</h4>
+                <p>327kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato cow chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/roasted.png" alt="">
+                <h2>로스트 치킨</h2>
+                <h3>Roasted Chicken</h3>
+                <h4>￦7,300</h4>
+                <p>300kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato shrimp">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/shrimp.png" alt="">
+                <h2>쉬림프</h2>
+                <h3>Shrimp</h3>
+                <h4>￦7,100</h4>
+                <p>229kcal/p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/teriyaki.png" alt="">
+                <h2>치킨 데리야끼</h2>
+                <h3>Chicken Teriyaki</h3>
+                <h4>￦7,000</h4>
+                <p>314kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/ltalian_BMT.png" alt="">
+                <h2>이탈리안비엠티</h2>
+                <h3>Italian B.M.T.™</h3>
+                <h4>￦6,700</h4>
+                <p>388kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato pig">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/BLT.png" alt="">
+                <h2>비엘티</h2>
+                <h3>B.L.T.</h3>
+                <h4>￦6,600</h4>
+                <p>300kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato chicken">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/slice.png" alt="">
+                <h2>치킨 슬라이스</h2>
+                <h3>Chicken Slice</h3>
+                <h4>￦6,500</h4>
+                <p>265kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat egg milk bean tomato">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/tuna.png" alt="">
+                <h2>참치</h2>
+                <h3>Tuna</h3>
+                <h4>￦5,800</h4>
+                <p>316kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat egg milk bean tomato seashell">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/eggmayo.png" alt="">
+                <h2>에그마요</h2>
+                <h3>Egg Mayo</h3>
+                <h4>￦5,500</h4>
+                <p>416kcal</p>
+            </div>
+        </div>
+
+        <div class="sub-card wheat bean tomato">
+            <div class="contents">
+                <img width="310px" height="200px" src="./img/veggie.png" alt="">
+                <h2>베지</h2>
+                <h3>Veggie Delite</h3>
+                <h4>￦4,900</h4>
+                <p>209kcal</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="next hidden">
+        <div class="next_contents">
+            <a href="./pick.html">다음으로
+                <img width="28px"src="./img/next.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script src="./main-js.js"></script>
+</body>
+</html>

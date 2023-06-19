@@ -1,0 +1,600 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars by default */
+  }
+
+  
+/* 네비 */
+
+.nav-bar{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.nav-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+
+.logo{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-area {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 200px; 
+}
+
+  .icon-area a:not(:last-child) {
+    margin-right: 80px; 
+}
+
+li{
+    float: left;
+    padding: 5px;
+}
+
+li > a{
+    text-decoration-line: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-weight:700;
+}
+li > a:hover{
+    color: #00902F;
+}
+
+/* 스텝영역 */
+
+.step-area {
+  height: 300px;
+  background-color: #00902F;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+#now{
+  background-color: #FFBE00;
+}
+
+@media(min-width: 1440px){
+
+  /* 체크박스 */
+  .checkbox-item:not(:first-child) {
+    margin-left: 150px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-container label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 1.2;
+  }
+  
+  .checkbox-container label::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #A9A9A9;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: background-image 1s ease;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked + label::after {
+    content: "";
+    background-image: url("./img/greencheck.png"); /* Replace with the path to your custom icon/image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px; /* Adjust the width and height of the custom icon/image */
+    height: 18px;
+    position: absolute;
+    top: 55%;
+    left: 6px;
+    z-index: 4;
+    transform: translateY(-50%);
+    animation: fade-in 0.5s ease;
+  }
+
+  span{
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  
+  .checkbox-container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+
+ /* 스텝영역 */
+
+  .step-area {
+    height: 210px;
+    background-color: #00902F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .step{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 100px;
+    flex-direction: column;
+    
+    z-index: 2;
+    aspect-ratio: 1/1;
+  }
+
+  .step-img{
+    padding-bottom: 5px;
+    width: 50px;
+    }
+
+    .all-step{
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      }
+
+    .line {
+      position: absolute;
+      width: 550px;
+      height: 0px;
+      left: calc(50% - 275px);
+      top: 170px;
+      z-index: 1;
+      border: 2px solid #FFFFFF;
+    }
+
+    .bread-img > img{
+      height: 350px;
+          pointer-events: none;
+          user-select: none;
+          padding-left: 10px;
+    }
+
+    .menu_bar{
+      width: 1500px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+  
+      padding-left: 40px;
+      padding-right: 40px;
+  
+      margin-left:auto;
+      margin-right: auto;
+      margin-top : -40px;
+  
+      box-shadow: 0 0 10px 3px rgba(0 0 0 / 10%);
+  
+  }
+
+  .menu_pick{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left :10px;
+      padding-right:10px;
+  }
+
+  .bread > p {
+    text-align:center;
+    width:50px;
+    color: white;
+    background-color: red;
+    border-radius: 16px;
+    margin-bottom: 5px;
+}
+
+  li{
+      float: left;
+      padding: 5px;
+  }
+  
+  li > a{
+      text-decoration-line: none;
+      color: black;
+      font-size: 20px;
+      padding-left: 60px;
+      padding-right: 60px;
+      font-weight:700;
+  }
+  
+  .bread{
+    height: 350px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    margin-top:200px;
+    margin-right:50px;
+    transition: margin-top 0.7s ease;
+
+    cursor:pointer;
+}
+
+.pick{
+  margin-top: 175px;
+}
+
+.bread:hover{
+  margin-top: 80px;
+  transition : 0.7s ease;
+}
+
+
+.bread > h1{
+  font-size: 24px;
+  font-weight:700;
+}
+
+.bread > h2{
+  font-size: 20px;
+  font-weight:400;
+  color: #6C6C6C;
+  margin-bottom:20px;
+  width: 180px;
+  text-align: center;
+}
+      }
+
+    
+
+@media (min-width: 2560px)  {
+
+  /* 체크박스 */
+  .checkbox-item:not(:first-child) {
+    margin-left: 150px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    display: none;
+  }
+  
+  .checkbox-container label {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    line-height: 1.2;
+  }
+  
+  .checkbox-container label::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #A9A9A9;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: background-image 1s ease;
+  }
+  
+  .checkbox-container input[type="checkbox"]:checked + label::after {
+    content: "";
+    background-image: url("./img/greencheck.png"); /* Replace with the path to your custom icon/image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px; /* Adjust the width and height of the custom icon/image */
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 6px;
+    z-index: 4;
+    transform: translateY(-50%);
+    animation: fade-in 0.5s ease;
+  }
+
+  span{
+    font-size: 28px;
+    padding-left: 10px;
+    font-weight: 600;
+  }
+  
+  .checkbox-container {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-direction: row;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(-50%);
+    }
+  }
+
+  /* 스텝영역 */
+  .step-area {
+    height: 300px;
+    background-color: #00902F;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #now{
+    background-color: #FFBE00;
+  }
+  
+  .step{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 100px;
+    flex-direction: column;
+    
+    z-index: 2;
+    aspect-ratio: 1/1;
+  }
+  
+  .step-img{
+    width: 70px;
+    padding-bottom: 5px;
+  }
+
+  .all-step{
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    }
+
+    .line {
+      position: absolute;
+      width: 550px;
+      height: 0px;
+      left: calc(50% - 275px);
+      top: 210px;
+      z-index: 1;
+      border: 2px solid #FFFFFF;
+    }
+
+    .bread-img > img{
+       height: 450px;
+          pointer-events: none;
+          user-select: none;
+    }
+
+    .contents-area{
+      display: flex;
+      justify-content: space-between;
+      width: 1800px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 100px;
+      position: relative;
+      align-items: center;
+  }
+
+  .menu_bar{
+      width: 1800px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+  
+      padding-left: 40px;
+      padding-right: 40px;
+  
+      margin-left:auto;
+      margin-right: auto;
+      margin-top : -40px;
+  
+      box-shadow: 0 0 10px 3px rgba(0 0 0 / 10%);
+  
+  }
+
+  .menu_pick{
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left :10px;
+      padding-right:10px;
+  }
+
+  li{
+      float: left;
+      padding: 10px;
+  }
+  
+  li > a{
+      text-decoration-line: none;
+      color: black;
+      font-size: 24px;
+      padding-left: 70px;
+      padding-right: 70px;
+      font-weight:700;
+  }
+
+  .bread{
+    height: 400px;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items: center;
+    margin-top:200px;
+    margin-right:50px;
+    transition: margin-top 0.7s ease;
+
+    cursor:pointer;
+}
+.pick{
+  margin-top: 160px;
+}
+.bread:hover{
+  margin-top: 80px;
+  transition : 0.7s ease;
+}
+
+  .bread > img{
+    height: 600px;
+    width: 250px;
+  }
+
+  .bread > h1{
+    font-size: 28px;
+    font-weight:700;
+}
+
+.bread > h2{
+    font-size: 24px;
+    font-weight:400;
+    color: #6C6C6C;
+    margin-bottom:20px;
+    width: 250px;
+    text-align: center;
+}
+
+.bread > p {
+  text-align:center;
+  width:70px;
+  color: white;
+  background-color: red;
+  border-radius: 24px;
+  margin-bottom: 5px;
+  font-size: 24px;
+  padding-bottom: 3px;
+  line-height: 32px;
+}
+        
+}
+
+
+/* 메뉴바 */
+
+.menu_pick{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left :10px;
+    padding-right:10px;
+}
+
+.bread-pick{
+    color: #00902F;
+}
+  
+  
+/* 빵 */
+
+.contents-area{
+    position: relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    bottom: -20px;
+}
+
+.bread.selected .bread-title {
+    background-color: #00902F;
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+}
+
+.next-green {
+    position: absolute;
+    right: 50px;
+    top: 60%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+  }
+  
+  .next-green.visible {
+    opacity: 1;
+  }
+
+  .back-green{
+    position: absolute;
+    left: 50px;
+    top: 60%;
+    z-index: 3;
+}
